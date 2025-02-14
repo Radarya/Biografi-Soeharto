@@ -5,7 +5,7 @@
 body {
     background-size: cover;
     z-index: -1;
-    background-image: url(img/istana.png);
+    background-image: url(istana.png);
     
 }
 a{
@@ -91,7 +91,7 @@ a{
 /* Bagian Header */
     header{
         padding: 10px 20px;
-        background-image: url(img/Mantab.png);
+        background-image: url(Mantab.png);
         font-size: 26px;
         color:white;
         border-radius: 22px;
