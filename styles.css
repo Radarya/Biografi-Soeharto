@@ -87,6 +87,35 @@ a{
             }
             
         }
+        @media screen and (max-width: 768px) {
+            body {
+                background-image: none;
+                background-color: #f5f5f5;
+            }
+            .container {
+                width: 90%;
+                margin: auto;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            #button {
+                width: 40px;
+                height: 40px;
+                bottom: 20px;
+                right: 20px;
+            }
+            article .top p {
+                font-size: large;
+            }
+            .Youtube {
+                font-size: large;
+            }
+        }
 
 /* Bagian Header */
     header{
@@ -213,7 +242,8 @@ a{
     article .top p{
         font-weight: 400;
         font-size: xx-large;
-        line-height: 1px;
+        line-height: 1.5;
+        margin-bottom: 10px;
     }
     article .top hr{
     border-top: 2px solid grey;  
