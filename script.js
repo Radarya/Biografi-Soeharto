@@ -28,3 +28,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("jQuery is loaded");
 });
+
+//Fungsi Highlight
+const p = document.getElementById("p");
+const searchBtn = document.getElementById("mencari");
+
+searchBtn.addEventListener("click", () => {
+  let input = document.getElementById("input").value;
+
+  if (input !== "") {
+    let regExp = new RegExp(input, "gi");
+    p.innerHTML = p.textContent.replace(regExp, "<mark>$&</mark>");
+  }
+});
