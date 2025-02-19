@@ -14,8 +14,35 @@ a{
     text-decoration: none;
 }
 img {
-    translate="no"
+    translate: no;
 }
+/* Search */
+    #kotakpencari {
+        width: 50%;
+        height: 50px;
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0 auto;
+    }
+  
+    #input {
+        width: 80%;
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    
+    #mencari {
+        padding: 10px 20px;
+        margin-left: 10px;
+        border: none;
+        background: crimson;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px
+    };
 
 /* Button */
     #button {
