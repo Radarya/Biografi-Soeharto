@@ -29,15 +29,22 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("jQuery is loaded");
 });
 
-//Fungsi Highlight
-const p = document.getElementById("p");
-const searchBtn = document.getElementById("mencari");
+ const p = document.getElementById("p");
+    const searchBtn = document.getElementById("mencari");
 
-searchBtn.addEventListener("click", () => {
-  let input = document.getElementById("input").value;
+    searchBtn.addEventListener("click", () => {
+        let input = document.getElementById("input").value.trim();
 
-  if (input !== "") {
-    let regExp = new RegExp(input, "gi");
-    p.innerHTML = p.textContent.replace(regExp, "<mark>$&</mark>");
-  }
+        if (input !== "") {
+            // Escape karakter khusus dalam input
+            const escapedInput = input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            let regExp = new RegExp(escapedInput, "gi");
+
+            // Mengganti teks yang cocok dengan <mark>
+            p.innerHTML = p.innerHTML.replace(regExp, (match) => `<mark>${match}</mark>`);
+        } else {
+            // Jika input kosong, hapus semua highlight
+            p.innerHTML = p.innerHTML.replace(/<mark>|<\/mark>/g, '');
+        }
+    });
 });
