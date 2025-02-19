@@ -16,6 +16,12 @@ a{
 img {
     translate: no;
 }
+.kiri{
+    float:left;
+}
+.kanan{
+    float:right;
+}
 /* Search */
     #kotakpencari {
         width: 50%;
@@ -202,7 +208,7 @@ img {
 
     /* Bagian Kanan */
         section nav.kanan ul {
-            float: right;
+            
             background-color: antiquewhite;
             padding: 22px;
             text-align: center;
@@ -235,7 +241,7 @@ img {
 
     /* Bagian Kiri */
         section nav.kiri ul {
-            float: left;
+            
             background-color: rgb(215, 249, 250);
             padding: 12px;
             text-align: justify;
