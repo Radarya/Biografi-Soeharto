@@ -129,9 +129,10 @@ img {
         margin-bottom: 22px;
         display: flex;
         justify-content: space-between;
+        font-family: 'Poppins', sans-serif;
     }
     header h2{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
     }
@@ -238,7 +239,7 @@ img {
         padding: 12px;
         margin: 0 auto;
         border: 1px solid #ccc;
-        font-family: 'Georgia', Times New Roman, Times, serif;
+        font-family: 'Georgia', Times New Roman;
         background-color: white;
     }
     article .top p{
